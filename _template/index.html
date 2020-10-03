@@ -65,7 +65,7 @@
     </nav>
     <!-- END nav -->
 
-    <div class="hero-wrap js-fullheight" style="background-image: url('images/bg_1.jpg');" data-stellar-background-ratio="0.5">
+    <!--<div class="hero-wrap js-fullheight" style="background-image: url('images/bg_1.jpg');" data-stellar-background-ratio="0.5">
         <div class="overlay"></div>
         <div class="container">
             <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start" data-scrollax-parent="true">
@@ -76,11 +76,43 @@
                 </div>
             </div>
         </div>
+    <div w3-include-html="slider/standard.html" class="hero-wrap js-fullheight" data-stellar-background-ratio="0.5">
     </div>
+    </div>-->
 
+    <!-- Slider -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <!-- Slide One - Set the background image for this slide in the line below -->
+            <div class="carousel-item active" style="background-image: url('images/bg_1.jpg');">
 
+            </div>
+            <!-- Slide Two - Set the background image for this slide in the line below -->
+            <div class="carousel-item" style="background-image: url('images/bg_1.jpg');">
 
-    <section class="ftco-section ftco-services">
+            </div>
+            <!-- Slide Three - Set the background image for this slide in the line below -->
+            <div class="carousel-item" style="background-image: url('images/bg_1.jpg');">
+
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!-- Slider End-->
+
+    <!--<section class="ftco-section ftco-services">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 d-flex services align-self-stretch px-4 ftco-animate">
@@ -115,13 +147,13 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
 
     <section class="ftco-section bg-light">
         <div class="container-fluid px-md-0">
             <div class="row no-gutters justify-content-center pb-5 mb-3">
                 <div class="col-md-7 heading-section text-center ftco-animate">
-                    <h2>Apartment Room</h2>
+                    <h2>Hotel Room</h2>
                 </div>
             </div>
             <div class="row no-gutters">
@@ -206,7 +238,7 @@
         </div>
     </section>
 
-
+    <!--
     <section class="ftco-section testimony-section bg-light">
         <div class="container">
             <div class="row justify-content-center pb-5 mb-3">
@@ -292,7 +324,7 @@
             </div>
         </div>
     </section>
-
+-->
     <section class="ftco-section bg-light">
         <div class="container">
             <div class="row no-gutters">
@@ -403,7 +435,7 @@
             </div>
         </div>
     </section>
-
+    <!--
     <section class="ftco-section bg-light">
         <div class="container">
             <div class="row justify-content-center pb-5 mb-3">
@@ -461,7 +493,18 @@
             </div>
         </div>
     </section>
+    -->
     <style>
+        .carousel-item {
+            height: 100vh;
+            min-height: 350px;
+            background: no-repeat center center scroll;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        
         .modal-body {
             max-height: 60vh;
             overflow-y: auto;
@@ -561,21 +604,6 @@
                 <div class="modal-body">
                     <form action="#" class="appointment-form">
                         <div class="row">
-
-
-                            <script>
-                                function readURL(input) {
-                                    if (input.files && input.files[0]) {
-                                        var reader = new FileReader();
-                                        reader.onload = function(e) {
-                                            $('#uploadimage')
-                                                .attr('src', e.target.result)
-
-                                        };
-                                        reader.readAsDataURL(input.files[0]);
-                                    }
-                                }
-                            </script>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <input type="text" class="form-control" placeholder="First Name">
@@ -680,6 +708,7 @@
         </div>
     </div>
     <!-- Log In Modal End -->
+
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -727,18 +756,17 @@
                 </div>
             </div>
         </div>
-        <div class="w-100 mt-5 border-top py-5">
+        <!--<div class="w-100 mt-5 border-top py-5">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-lg-8">
 
                         <p class="copyright mb-0">
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            Copyright &copy;
+                            Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. Copyright &copy;
                             <script>
                                 document.write(new Date().getFullYear());
-                            </script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            </script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a> Link back to Colorlib can't be removed. Template is
+                            licensed under CC BY 3.0.
                         </p>
                     </div>
                     <div class="col-md-6 col-lg-4 text-md-right">
@@ -750,7 +778,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
     </footer>
 
 
@@ -775,7 +803,19 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
     <script src="js/google-map.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    $('#uploadimage')
+                        .attr('src', e.target.result)
 
+                };
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+    </script>
 
 
 </body>
